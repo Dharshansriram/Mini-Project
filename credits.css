@@ -1,0 +1,32 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f4f6fb;
+    padding: 40px;
+    text-align: center;
+}
+
+.subtitle {
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.credit-box {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    margin: auto;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.credit-box p {
+    font-size: 48px;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.status-box {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}

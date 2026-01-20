@@ -1,0 +1,43 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f4f6fb;
+    padding: 40px;
+    text-align: center;
+}
+
+.profile-card {
+    background: white;
+    max-width: 350px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    margin: 15px 0 5px;
+}
+
+.roll {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin: 8px 0;
+    font-size: 15px;
+}

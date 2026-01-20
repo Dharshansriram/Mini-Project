@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Courses</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+
+<body>
+
+    <h1>📚 My Courses</h1>
+    <p class="subtitle">Year-wise structured learning path</p>
+
+    <div class="course-grid">
+
+        <!-- COURSE 1 -->
+        <div class="course-card">
+            <h3>Programming Fundamentals</h3>
+
+            <p class="meta">Credits: 3 | Modules: 5</p>
+
+            <div class="progress">
+                <div class="bar" style="width:40%"></div>
+            </div>
+            <p class="status pending">In Progress</p>
+
+
+            <button onclick="openCourse()">Continue</button>
+            <script>
+                function opensource() {
+                    let progress = 40;
+                    if (progress > 30) {
+                        window.location.href = "coursedetail.html";
+                    } else {
+                        alert("Complete the Previous Chapters to unlock this")
+                    }
+                }
+            </script>
+
+        </div>
+
+        <!-- COURSE 2 -->
+        <div class="course-card completed">
+            <h3>Aptitude Basics</h3>
+            <p class="meta">Credits: 2 | Modules: 4</p>
+
+            <div class="progress">
+                <div class="bar" style="width:25%"></div>
+            </div>
+            <p class="status done">Completed</p>
+
+            <button disabled="openCourse()">Completed ✅</button>
+            <script>
+                function openCourse() {
+                    let progress = 25;
+                    if (progress > 30) {
+                        window.location.href = "coursedetail.html";
+                    } else {
+                        alert("Complete the Previous Chapters to unlock this")
+                    }
+                }
+            </script>
+        </div>
+
+        <!-- COURSE 3 -->
+        <div class="course-card locked">
+            <h3>Data Structures</h3>
+            <p class="meta">Credits: 4 | Modules: 6</p>
+
+            <p class="status lock">Locked 🔒</p>
+
+            <button onclick="openCourse()">Complete previous courses</button>
+        </div>
+
+
+    </div>
+
+
+    <script src="courses.js"></script>
+</body>
+
+</html>
